@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="8"
+        android:hint="3.14"
+        android:inputType="numberDecimal"
+        android:id="@+id/operand1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/operand1"
+        android:text="+"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:id="@+id/plusButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/plusButton"
+        android:text="-"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:id="@+id/minusButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/minusButton"
+        android:text="*"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:id="@+id/timesButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/timesButton"
+        android:text="/"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:id="@+id/divideButton"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="8"
+        android:hint="3.14"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/divideButton"
+        android:id="@+id/operand2"/>
+
+</RelativeLayout>
